@@ -1,0 +1,60 @@
+/* --- DESIGN GLOBAL & TYPOGRAPHIE --- */
+:root {
+    --primary: #008751; /* Vert Bénin / Croissance */
+    --secondary: #FCD116; /* Jaune / Richesse */
+    --accent: #E01E37; /* Rouge / Passion */
+    --dark: #0a192f;
+    --light: #e6f1ff;
+    --font-stack: 'Poppins', sans-serif;
+}
+
+body { margin: 0; font-family: var(--font-stack); background: var(--dark); color: var(--light); overflow-x: hidden; }
+a { text-decoration: none; color: inherit; }
+.container { width: 90%; max-width: 1200px; margin: auto; }
+.logo-img { height: 50px; vertical-align: middle; } /* Ton Logo */
+
+/* --- NAVIGATION "GLASS" --- */
+.navbar { background: rgba(10, 25, 47, 0.85); backdrop-filter: blur(10px); padding: 1rem 0; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.nav-flex { display: flex; justify-content: space-between; align-items: center; }
+.brand-name { font-weight: 700; font-size: 1.2rem; margin-left: 10px; color: var(--light); }
+.brand-name span { color: var(--primary); }
+
+/* --- ACCUEIL (HERO) --- */
+.hero-section { height: 90vh; display: flex; align-items: center; position: relative; }
+.hero-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; z-index: -1; }
+.hero-content h1 { font-size: 3.5rem; font-weight: 800; line-height: 1.2; margin-bottom: 20px; background: linear-gradient(to right, var(--light), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.hero-content p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin-bottom: 30px; }
+.btn-main { padding: 15px 40px; background: var(--primary); color: white; font-weight: 700; border-radius: 50px; transition: 0.3s; display: inline-block; }
+.btn-main:hover { transform: translateY(-3px); box-shadow: 0 10px 20px -10px rgba(0,135,81,0.5); }
+
+/* --- À PROPOS (MANIFESTE) --- */
+.about-split { display: flex; align-items: center; gap: 50px; padding: 100px 0; }
+.about-text { flex: 1; }
+.about-text h2 { font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; }
+.about-text .lead { font-size: 1.3rem; font-weight: 600; margin-bottom: 20px; color: var(--secondary); }
+.about-text p { line-height: 1.8; margin-bottom: 20px; opacity: 0.8; }
+.about-img-box { flex: 1; position: relative; }
+.about-img { width: 100%; border-radius: 20px; box-shadow: 20px 20px 0px var(--primary); }
+
+/* --- INSCRIPTION (FORMULAIRE) --- */
+.signup-page { height: 100vh; display: flex; align-items: center; justify-content: center; background: url('images/signup_action.jpg') no-repeat center center/cover; position: relative; }
+.signup-overlay { position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(10,25,47,0.8); }
+.signup-box { background: rgba(255,255,255,0.1); backdrop-filter: blur(15px); padding: 40px; border-radius: 20px; width: 100%; max-width: 450px; position: relative; z-index: 2; border: 1px solid rgba(255,255,255,0.2); text-align: center; }
+.signup-box h3 { font-size: 1.8rem; margin-bottom: 10px; }
+.form-group input { width: 100%; padding: 15px; margin-bottom: 15px; background: rgba(255,255,255,0.9); border: none; border-radius: 10px; font-family: inherit; }
+.btn-full { width: 100%; padding: 15px; background: var(--primary); border: none; color: white; font-weight: 700; border-radius: 10px; cursor: pointer; font-size: 1rem; transition: 0.3s; }
+
+/* --- DISCUSSION (WHATSAPP STYLE) --- */
+.wa-body { background: #d8dbdc; display: flex; justify-content: center; height: 100vh; }
+.wa-container { width: 100%; max-width: 500px; background: #efe7dd; display: flex; flex-direction: column; height: 100%; box-shadow: 0 0 20px rgba(0,0,0,0.2); }
+.wa-header { background: #075e54; color: white; padding: 10px 15px; display: flex; align-items: center; }
+.wa-chat-box { flex: 1; overflow-y: auto; padding: 20px; background: url('images/chat_bg.jpg'); /* Image de fond subtile */ }
+.wa-footer { background: #f0f0f0; padding: 10px; display: flex; align-items: center; gap: 10px; }
+.wa-input { flex: 1; padding: 10px 15px; border-radius: 20px; border: none; outline: none; }
+.wa-btn { background: none; border: none; font-size: 1.2rem; color: #555; cursor: pointer; padding: 5px 10px; }
+.wa-send { background: #075e54; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+/* Bulles de chat */
+.msg { max-width: 80%; margin-bottom: 10px; padding: 8px 10px; border-radius: 8px; position: relative; font-size: 0.9rem; color: black; }
+.msg.sent { background: #dcf8c6; align-self: flex-end; margin-left: auto; }
+.msg-time { display: block; text-align: right; font-size: 0.7rem; opacity: 0.6; margin-top: 4px; }
+.fa-check-double { color: #34b7f1; }

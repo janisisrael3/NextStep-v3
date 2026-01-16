@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Discussion | Communauté NextStep</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="wa-body">
+    <div class="wa-container">
+        <header class="wa-header">
+            <a href="index.html" style="color:white; margin-right: 10px;"><i class="fas fa-arrow-left"></i></a>
+            <img src="images/logo.png" style="height: 35px; margin-right: 10px; background: white; border-radius: 50%; padding: 2px;">
+            <div style="flex: 1;">
+                <h4 style="margin: 0; font-weight: 600;">NextStep Élite 🇧🇯</h4>
+                <span style="font-size: 0.8rem; opacity: 0.8;">Israel, Amina, et 250 autres...</span>
+            </div>
+            <div>
+                <i class="fas fa-video" style="margin-right: 15px;"></i>
+                <i class="fas fa-phone"></i>
+            </div>
+        </header>
+
+        <main class="wa-chat-box" id="chatBox">
+            <div style="text-align: center; margin-top: 20px; opacity: 0.6; font-size: 0.9rem; background: rgba(255,255,255,0.8); padding: 10px; border-radius: 10px; display: inline-block; margin-left: 50%; transform: translateX(-50%);">
+                🔒 Les messages sont chiffrés par l'écosystème NextStep.
+            </div>
+            </main>
+
+        <footer class="wa-footer">
+            <button class="wa-btn"><i class="far fa-smile"></i></button>
+            <input type="text" id="chatInput" class="wa-input" placeholder="Message..." autocomplete="off">
+            <button class="wa-btn"><i class="fas fa-paperclip"></i></button>
+            <button class="wa-btn"><i class="fas fa-camera"></i></button>
+            <button class="wa-btn wa-send" onclick="sendMessage()">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
